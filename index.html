@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Library Management System</h1>
+
+        
+        <div class="section">
+            <h3>Add Book</h3>
+            <div class="input-group">
+                <input type="text" id="bookTitle" placeholder="Book Title">
+                <input type="text" id="bookAuthor" placeholder="Author">
+                <button onclick="addBook()">Add Book</button>
+            </div>
+        </div>
+
+        
+        <div class="section">
+            <h3>Register Member</h3>
+            <div class="input-group">
+                <input type="text" id="memberName" placeholder="Member Name">
+                <button onclick="registerMember()">Register Member</button>
+            </div>
+        </div>
+
+       
+        <div class="section">
+            <h3>Available Books</h3>
+            <div id="availableBooks"></div>
+        </div>
+
+        <div class="section">
+            <h3>Borrow Book</h3>
+            <div class="input-group">
+                <input type="text" id="borrowMemberName" placeholder="Member Name">
+                <input type="text" id="borrowBookTitle" placeholder="Book Title">
+                <button onclick="borrowBook()">Borrow Book</button>
+            </div>
+        </div>
+
+    
+        <div class="section">
+            <h3>Return Book</h3>
+            <div class="input-group">
+                <input type="text" id="returnMemberName" placeholder="Member Name">
+                <input type="text" id="returnBookTitle" placeholder="Book Title">
+                <button onclick="returnBook()">Return Book</button>
+            </div>
+            
+        </div>
+
+      
+        <div class="section">
+            <h3>Borrowed Books</h3>
+            <div id="borrowedBooks"></div>
+        </div>
+
+    
+        <div class="section">
+            <h3>Members</h3>
+            <div id="membersList"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
